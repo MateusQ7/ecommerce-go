@@ -17,7 +17,7 @@ import (
 
 func StartServer() {
 
-	err := godotenv.Load()
+	err := godotenv.Load("../../.env")
 	if err != nil {
 		log.Println(".env file not found, relying on environment variables")
 	}
